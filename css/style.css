@@ -68,7 +68,6 @@ header nav a {
 		display: none;
 	}
 	section{
-		border:2px solid blue;
 		display: flex;
 		flex-direction: column-reverse;
 		height: fit-content;
@@ -99,10 +98,7 @@ header nav a {
 		gap: 10px;
 		width: 90%;
 		height: fit-content;
-	}
-	.supliers img{
-		width: 65px;
-		height: 22px;
+		padding-top: 10px;
 	}
 	.rightcontent{
 		background-image: url(/images/image-hero-mobile.png);
@@ -111,7 +107,6 @@ header nav a {
 		background-repeat: no-repeat;
 		width: 100%;
 		height: 50vh;
-		border:2px solid;
 	}
 }
 @media only screen and (min-width:992px){
