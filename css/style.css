@@ -165,7 +165,6 @@ header nav a {
 		display: flex;
 		flex-direction: column-reverse;
 		height: fit-content;
-		border:2px solid red;
 	}
 	.leftcontent{
 		width: 100%;
@@ -272,7 +271,10 @@ header nav a {
 .container{
 	height: 100vh;
 }
-	.hleft {
+header{
+	width: 95%;
+}
+.hleft {
 	display: flex;
 	gap: 40px;
 	width: fit-content;
@@ -303,7 +305,6 @@ header nav a {
 	padding: 8px;
 }
 section{
-	border:2px solid blue;
 	width: 85%;
 	display: flex;
 	justify-content: space-around;
@@ -320,11 +321,11 @@ section{
 }
 .leftcontent h1{
 	font-size: 50px;
-	width: 59%;
+	width: 60%;
 }
 .leftcontent p{
 	text-align: left;
-	width: 80%;
+	width: 90%;
 }
 .leftcontent a{
 	border-radius: 5px;
@@ -338,4 +339,32 @@ section{
 	width: 70%;
 	height: 80vh;
 }
+}
+@media only screen and (min-width:1024px){
+	.leftcontent h1{
+		width: 59%;
+	}
+}
+@media only screen and (min-width:1272px){
+	section{
+		width: 80%;
+	}
+	.leftcontent h1{
+		width: 50%;
+	}
+	.leftcontent p{
+		width: 70%;
+		font-size: 20px;
+	}
+}
+@media only screen and (min-width:1440px){
+	header{
+		width: 85%;
+	}
+	section{
+		width: 70%;
+	}
+	.leftcontent h1{
+		width: 51%;
+	}
 }
