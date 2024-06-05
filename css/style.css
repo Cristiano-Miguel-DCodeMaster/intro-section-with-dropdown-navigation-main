@@ -39,16 +39,6 @@ header nav a {
 ::-webkit-scrollbar {
 	display: none;
 }
-.attribution {
-	font-size: 11px;
-	text-align: center;
-	padding-top: 20px;
-}
-.attribution a {
-	color: hsl(228, 45%, 44%);
-	text-decoration: none;
-	font-family: "epilogue",sans-serif;
-}
 @media only screen and (max-width:320px){
 	.container{
 		height: fit-content;
@@ -159,6 +149,12 @@ header nav a {
 	.hright{
 		display: none;
 	}
+	.that{
+		width: 100%;
+		height: 100vh;
+		background-color: rgba(0, 0, 0, 0.541);
+		position:fixed;
+	}
 	.mobile-menu{
 		border: 2px solid red;
 		position: fixed;
@@ -166,6 +162,31 @@ header nav a {
 		top: 0;
 		display: flex;
 		flex-direction: column;
+		gap: 805px;
+		height: 100vh;
+		width: 50%;
+		background-color: #fff;
+	}
+	.mobile-menu a{
+		text-decoration: none;
+		color: var(--MediumGray);
+		font-size: 25px;
+	}
+	.mobile-menu .cross{
+		position: absolute;
+	}
+	.mobile-menu .options{
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+	}
+	.mobile-menu .options .login,.register{
+		text-align: center;
+	}
+	.mobile-menu .cross{
+		display: flex;
+		justify-content: flex-end;
+		right: 0;
 	}
 	section{
 		display: flex;
@@ -195,6 +216,12 @@ header nav a {
 		padding: 10px;
 		font-weight: 600;
 		border-radius: 12px;
+	}
+	.leftcontent a:hover{
+		background-color: #fff;
+		color:var(--AlmostBlack);
+		border:2px solid var(--AlmostBlack);
+		transition: all 2s;
 	}
 	.supliers{
 		display: flex;
@@ -309,6 +336,12 @@ header{
 	border: 2px solid var(--MediumGray);
 	border-radius: 10px;
 	padding: 8px;
+}
+.register:hover{
+	background-color: var(--AlmostBlack);
+	color: #fff;
+	border:none;
+	transition: all 2s;
 }
 .mobile-menu{
 	display: none;
