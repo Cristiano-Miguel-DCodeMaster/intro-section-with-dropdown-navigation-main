@@ -269,7 +269,10 @@ header nav a {
  }
 }
 @media only screen and (min-width:992px){
-.hleft {
+.container{
+	height: 100vh;
+}
+	.hleft {
 	display: flex;
 	gap: 40px;
 	width: fit-content;
@@ -301,17 +304,19 @@ header nav a {
 }
 section{
 	border:2px solid blue;
-	width: 100%;
+	width: 85%;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	height: 100vh;
 	flex-direction: row;
+	height: fit-content;
 }
 .leftcontent{
 	text-align: left;
 	justify-content: start;
 	align-items: start;
+	gap: 40px;
 }
 .leftcontent h1{
 	font-size: 50px;
@@ -321,10 +326,16 @@ section{
 	text-align: left;
 	width: 80%;
 }
+.leftcontent a{
+	border-radius: 5px;
+}
+.supliers{
+	justify-content: start;
+}
 .rightcontent{
 	background-image: url(/images/image-hero-desktop.png);
 	background-size: contain;
-	width: 50%;
+	width: 70%;
 	height: 80vh;
 }
 }
