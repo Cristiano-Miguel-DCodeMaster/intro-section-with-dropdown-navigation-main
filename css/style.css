@@ -34,7 +34,6 @@ header nav a {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	border: 2px solid red;
 	font-family: "epilogue", sans-serif;
 }
 ::-webkit-scrollbar {
@@ -83,7 +82,6 @@ header nav a {
 		display: flex;
 		flex-direction: column-reverse;
 		height: fit-content;
-		border:2px solid red;
 	}
 	.leftcontent{
 		width: 100%;
@@ -366,5 +364,30 @@ section{
 	}
 	.leftcontent h1{
 		width: 51%;
+	}
+}
+@media only screen and (min-width:1440px) and (min-height:900px){
+	header{
+		width: 85%;
+	}
+	section{
+		width: 70%;
+	}
+	.leftcontent h1{
+		width: 51%;
+	}
+}
+@media only screen and (min-width:2000px){
+	header{
+		width: 75%;
+	}
+	section{
+		width: 60%;
+	}
+	.leftcontent h1{
+		width: 43%;
+	}
+	.leftcontent p{
+		font-size: 22px;
 	}
 }
