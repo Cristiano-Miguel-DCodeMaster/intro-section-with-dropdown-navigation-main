@@ -68,6 +68,108 @@ header nav a {
 	.hright{
 		display: none;
 	}
+	.that{
+		width: 100%;
+		height: 200vh;
+		background-color: rgba(0, 0, 0, 0.541);
+		position:absolute;
+		top: 0;
+		animation: show 1s ease-in-out 1;
+		display: none;
+	}
+	.mobile-menu{
+		position: fixed;
+		right: 0;
+		top: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		height: 100vh;
+		width: 55%;
+		background-color: #fff;
+		padding: 14px;
+		animation: show 1s ease-in-out 1;
+		display: none;
+	}
+	@keyframes show {
+		from{
+			opacity: 0;
+		}
+		50%{
+			opacity: 0.8;
+		}
+		to{
+			opacity: 1;
+		}
+	}
+	.mobile-menu a{
+		text-decoration: none;
+		color: var(--MediumGray);
+		font-size: 18px;
+	}
+	.mobile-menu .crossdiv{
+		display: flex;
+		justify-content: end;
+	}
+	.mobile-menu .options .Features, .Company{
+		display: flex;
+		gap: 10px;
+		align-items: center;
+	}
+	.mobile-menu .options{
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		padding-left: 20px;
+	}
+	.mobile-menu .options .login,.register{
+		text-align: center;	
+	}
+	.mobile-menu .options .register{
+		border: 2px solid var(--MediumGray);
+		border-radius: 10px;
+		padding: 8px;
+	}
+	.mobile-menu .cross{
+		width: 	11%;
+		height: fit-content;
+	}
+	.todolist{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		display: none;
+	}
+	.calendar{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		display: none;
+	}
+	.reminders{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		display: none;
+	}
+	.planning{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		display: none;
+	}
+	.companyelements{
+		display: flex;
+		align-items: start;
+		flex-direction: column;
+		padding-left: 25px;
+		gap:12px;
+		display: none;
+	}
 	section{
 		display: flex;
 		flex-direction: column-reverse;
@@ -97,6 +199,12 @@ header nav a {
 		padding: 10px;
 		font-weight: 600;
 		border-radius: 12px;
+	}
+	.leftcontent a:hover{
+		background-color: #fff;
+		color:var(--AlmostBlack);
+		border:2px solid var(--AlmostBlack);
+		transition: all 2s;
 	}
 	.supliers{
 		display: flex;
@@ -151,11 +259,11 @@ header nav a {
 	}
 	.that{
 		width: 100%;
-		height: 100vh;
+		height: 150vh;
 		background-color: rgba(0, 0, 0, 0.541);
 		position:absolute;
-		transition: all 2s;
-		opacity: 0;
+		animation: show 1s ease-in-out 1;
+		display: none;
 	}
 	.mobile-menu{
 		position: fixed;
@@ -163,13 +271,24 @@ header nav a {
 		top: 0;
 		display: flex;
 		flex-direction: column;
-		gap: 5px;
+		gap: 50px;
 		height: 100vh;
 		width: 55%;
 		background-color: #fff;
 		padding: 14px;
-		transition: all 2s;
-		opacity: 0;
+		animation: show 1s ease-in-out 1;
+		display: none;
+	}
+	@keyframes show {
+		from{
+			opacity: 0;
+		}
+		50%{
+			opacity: 0.8;
+		}
+		to{
+			opacity: 1;
+		}
 	}
 	.mobile-menu a{
 		text-decoration: none;
@@ -202,6 +321,42 @@ header nav a {
 	.mobile-menu .cross{
 		width: 	11%;
 		height: fit-content;
+	}
+	.todolist{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		display: none;
+	}
+	.calendar{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		display: none;
+	}
+	.reminders{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		display: none;
+	}
+	.planning{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		display: none;
+	}
+	.companyelements{
+		display: flex;
+		align-items: start;
+		flex-direction: column;
+		padding-left: 25px;
+		gap:12px;
+		display: none;
 	}
 	section{
 		display: flex;
@@ -335,7 +490,7 @@ header{
 }
 .hlefta{
 	display: flex;
-	gap: 10px;
+	gap: 25px;
 }
 .menu{
 	display: none;
@@ -357,6 +512,46 @@ header{
 	color: #fff;
 	border:none;
 	transition: all 2s;
+}
+.optionsdesktop{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	top: 89%;
+	left: 10%;
+	background-color: #fff;
+	padding: 12px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	box-shadow: 1px 3px 5px 3px gainsboro;
+	border-radius: 3px;
+	display: none;
+}
+.companyelementsdesktop{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	top: 89%;
+	left: 26%;
+	background-color: #fff;
+	padding: 12px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	box-shadow: 1px 3px 5px 3px gainsboro;
+	border-radius: 3px;
+	display: none;
+}
+.optionsdesktop a{
+	font-size: 16px;
+}
+.optionsdesktop .todolist,.optionsdesktop .calendar,.optionsdesktop .reminders,.optionsdesktop .planning{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+.optionsdesktop .reminders{
+	gap: 7px;
 }
 .mobile-menu{
 	display: none;
