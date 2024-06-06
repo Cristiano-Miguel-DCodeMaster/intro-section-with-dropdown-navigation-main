@@ -153,40 +153,55 @@ header nav a {
 		width: 100%;
 		height: 100vh;
 		background-color: rgba(0, 0, 0, 0.541);
-		position:fixed;
+		position:absolute;
+		transition: all 2s;
+		opacity: 0;
 	}
 	.mobile-menu{
-		border: 2px solid red;
 		position: fixed;
 		right: 0;
 		top: 0;
 		display: flex;
 		flex-direction: column;
-		gap: 805px;
+		gap: 5px;
 		height: 100vh;
-		width: 50%;
+		width: 55%;
 		background-color: #fff;
+		padding: 14px;
+		transition: all 2s;
+		opacity: 0;
 	}
 	.mobile-menu a{
 		text-decoration: none;
 		color: var(--MediumGray);
-		font-size: 25px;
+		font-size: 18px;
 	}
-	.mobile-menu .cross{
-		position: absolute;
+	.mobile-menu .crossdiv{
+		display: flex;
+		justify-content: end;
+	}
+	.mobile-menu .options .Features, .Company{
+		display: flex;
+		gap: 10px;
+		align-items: center;
 	}
 	.mobile-menu .options{
 		display: flex;
 		flex-direction: column;
 		gap: 15px;
+		padding-left: 20px;
 	}
 	.mobile-menu .options .login,.register{
-		text-align: center;
+		text-align: center;	
+	}
+	.mobile-menu .options .register{
+		border: 2px solid var(--MediumGray);
+		border-radius: 10px;
+		padding: 8px;
 	}
 	.mobile-menu .cross{
-		display: flex;
-		justify-content: flex-end;
-		right: 0;
+		width: 	11%;
+		height: fit-content;
 	}
 	section{
 		display: flex;
