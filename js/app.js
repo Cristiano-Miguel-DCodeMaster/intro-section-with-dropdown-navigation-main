@@ -18,39 +18,40 @@ arrowDown.addEventListener('click', () => {
     count1++;
     if (!(count1%2)==0) {
         arrowDown.src = "images/icon-arrow-up.svg";
-        const todolist = document.querySelector('.todolist');
-        const calendar = document.querySelector('.calendar');
-        const reminders = document.querySelector('.reminders');
-        const planning = document.querySelector('.planning');
+       
+        const todolist2 = document.querySelector('.todolist2');
+        const calendar2 = document.querySelector('.calendar2');
+        const reminders2 = document.querySelector('.reminders2');
+        const planning2 = document.querySelector('.planning2');
 
-        todolist.style.display = "block";
-        todolist.style.display = "flex";
-        todolist.style.alignItems = "center";
+        todolist2.style.display = "block";
+        todolist2.style.display = "flex";
+        todolist2.style.alignItems = "center";
 
-        calendar.style.display = "block";
-        calendar.style.display = "flex";
-        calendar.style.alignItems = "center";
+        calendar2.style.display = "block";
+        calendar2.style.display = "flex";
+        calendar2.style.alignItems = "center";
 
-        reminders.style.display = "block";
-        reminders.style.display = "flex";
-        reminders.style.alignItems = "center";
+        reminders2.style.display = "block";
+        reminders2.style.display = "flex";
+        reminders2.style.alignItems = "center";
 
-        planning.style.display = "block";
-        planning.style.display = "flex";
-        planning.style.alignItems = "center";
+        planning2.style.display = "block";
+        planning2.style.display = "flex";
+        planning2.style.alignItems = "center";
     } else {
-        const todolist = document.querySelector('.todolist');
-        const calendar = document.querySelector('.calendar');
-        const reminders = document.querySelector('.reminders');
-        const planning = document.querySelector('.planning');
+        const todolist2 = document.querySelector('.todolist2');
+        const calendar2 = document.querySelector('.calendar2');
+        const reminders2 = document.querySelector('.reminders2');
+        const planning2 = document.querySelector('.planning2');
         arrowDown.src = "images/icon-arrow-down.svg";
-        todolist.style.display = "none";
+        todolist2.style.display = "none";
 
-        calendar.style.display = "none";
+        calendar2.style.display = "none";
 
-        reminders.style.display = "none";
+        reminders2.style.display = "none";
 
-        planning.style.display = "none";
+        planning2.style.display = "none";
     }
 })
 var count2 = 0;
@@ -69,4 +70,13 @@ arrowDown2.addEventListener('click', () => {
     
         companyElements.style.display = "none";
     }
+})
+var count3 = 0;
+const Featuresoption = document.querySelector('.Featuresoption');
+Featuresoption.addEventListener('click', () => {
+    count3++;
+    if (!(count3 % 2) == 0) {
+    const optionsdesktop = document.querySelector('.optionsdesktop');
+
+    optionsdesktop.style.display = "block";
 })

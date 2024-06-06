@@ -322,28 +322,28 @@ header nav a {
 		width: 	11%;
 		height: fit-content;
 	}
-	.todolist{
+	.todolist2{
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		gap: 10px;
 		display: none;
 	}
-	.calendar{
+	.calendar2{
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		gap: 10px;
 		display: none;
 	}
-	.reminders{
+	.reminders2{
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		gap: 10px;
 		display: none;
 	}
-	.planning{
+	.planning2{
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -513,7 +513,7 @@ header{
 	border:none;
 	transition: all 2s;
 }
-.optionsdesktop{
+.hlefta .optionsdesktop{
 	position: absolute;
 	display: flex;
 	flex-direction: column;
@@ -527,7 +527,7 @@ header{
 	border-radius: 3px;
 	display: none;
 }
-.companyelementsdesktop{
+.hlefta .companyelementsdesktop{
 	position: absolute;
 	display: flex;
 	flex-direction: column;
