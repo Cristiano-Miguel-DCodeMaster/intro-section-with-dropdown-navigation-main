@@ -76,7 +76,32 @@ const Featuresoption = document.querySelector('.Featuresoption');
 Featuresoption.addEventListener('click', () => {
     count3++;
     if (!(count3 % 2) == 0) {
-    const optionsdesktop = document.querySelector('.optionsdesktop');
+        arrowDown.src = "images/icon-arrow-up.svg";
+        const optionsdesktop = document.querySelector('.optionsdesktop');
 
-    optionsdesktop.style.display = "block";
+        optionsdesktop.style.display = "block";
+    } else {
+        arrowDown.src = "images/icon-arrow-down.svg";
+        const optionsdesktop = document.querySelector('.optionsdesktop');
+
+        optionsdesktop.style.display = "none";
+    }
 })
+var count4 = 0;
+const Company = document.querySelector('.Company');
+Company.addEventListener('click', () => {
+    count4++;
+    if (!(count4 % 2) == 0) {
+        arrowDown2.src = "images/icon-arrow-up.svg";
+        const companyelementsdesktop = document.querySelector('.companyelementsdesktop');
+
+        companyelementsdesktop.style.display = "block";
+        companyelementsdesktop.style.display = "flex";
+        companyelementsdesktop.style.flexDirection = "column";
+    } else {
+        arrowDown2.src = "images/icon-arrow-down.svg";
+        const companyelementsdesktop = document.querySelector('.companyelementsdesktop');
+
+        companyelementsdesktop.style.display = "none";
+    }
+    })
