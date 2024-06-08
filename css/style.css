@@ -10,8 +10,8 @@
 	font-family: "epilogue", sans-serif;
 	src: url(/fonts/Epilogue[wght].ttf);
 }
-header{
-    width: 100%;
+header {
+	width: 100%;
 	display: flex;
 	justify-content: center;
 }
@@ -39,45 +39,50 @@ header nav a {
 ::-webkit-scrollbar {
 	display: none;
 }
-@media only screen and (max-width:320px){
-	.container{
+@media only screen and (max-width: 320px) {
+	.container {
 		height: fit-content;
 	}
-	header{
+	header {
 		background-color: #fff;
 		position: sticky;
 		top: 0;
 		padding-top: 10px;
 	}
-	.hleft{
+	.hleft {
 		display: flex;
 		justify-content: space-between;
 		width: 100%;
 		align-items: center;
 		padding: 10px;
-	 }
-	.hlefta{
+	}
+	.hlefta {
 		display: none;
 	}
-	.logo{
+	.logo {
 		margin-left: 15px;
 	}
-	.menu{
+	.menu {
 		margin-right: 7px;
 	}
-	.hright{
+	.hright {
 		display: none;
 	}
-	.that{
+	.that {
 		width: 100%;
 		height: 200vh;
-		background-color: rgba(0, 0, 0, 0.541);
-		position:absolute;
+		background-color: rgba(
+			0,
+			0,
+			0,
+			0.541
+		);
+		position: absolute;
 		top: 0;
 		animation: show 1s ease-in-out 1;
 		display: none;
 	}
-	.mobile-menu{
+	.mobile-menu {
 		position: fixed;
 		right: 0;
 		top: 0;
@@ -92,90 +97,92 @@ header nav a {
 		display: none;
 	}
 	@keyframes show {
-		from{
+		from {
 			opacity: 0;
 		}
-		50%{
+		50% {
 			opacity: 0.8;
 		}
-		to{
+		to {
 			opacity: 1;
 		}
 	}
-	.mobile-menu a{
+	.mobile-menu a {
 		text-decoration: none;
 		color: var(--MediumGray);
 		font-size: 18px;
 	}
-	.mobile-menu .crossdiv{
+	.mobile-menu .crossdiv {
 		display: flex;
 		justify-content: end;
 	}
-	.mobile-menu .options .Features, .Company{
+	.mobile-menu .options .Features,
+	.Company {
 		display: flex;
 		gap: 10px;
 		align-items: center;
 	}
-	.mobile-menu .options{
+	.mobile-menu .options {
 		display: flex;
 		flex-direction: column;
 		gap: 15px;
 		padding-left: 20px;
 	}
-	.mobile-menu .options .login,.register{
-		text-align: center;	
+	.mobile-menu .options .login,
+	.register {
+		text-align: center;
 	}
-	.mobile-menu .options .register{
+	.mobile-menu .options .register {
 		border: 2px solid var(--MediumGray);
 		border-radius: 10px;
 		padding: 8px;
 	}
-	.mobile-menu .cross{
-		width: 	11%;
+	.mobile-menu .cross {
+		width: 11%;
 		height: fit-content;
 	}
-	.todolist{
+	.todolist {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		gap: 10px;
 		display: none;
 	}
-	.calendar{
+	.calendar {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		gap: 10px;
 		display: none;
 	}
-	.reminders{
+	.reminders {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		gap: 10px;
 		display: none;
 	}
-	.planning{
+	.planning {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		gap: 10px;
 		display: none;
 	}
-	.companyelements{
+	.companyelements {
 		display: flex;
 		align-items: start;
 		flex-direction: column;
 		padding-left: 25px;
-		gap:12px;
+		gap: 12px;
 		display: none;
 	}
-	section{
+	section {
 		display: flex;
 		flex-direction: column-reverse;
 		height: fit-content;
 	}
-	.leftcontent{
+	.leftcontent {
 		width: 100%;
 		display: flex;
 		flex-direction: column;
@@ -183,30 +190,32 @@ header nav a {
 		align-items: center;
 		gap: 13px;
 	}
-	.leftcontent h1{
+	.leftcontent h1 {
 		font-size: 30px;
 		text-align: center;
 	}
-	.leftcontent p{
+	.leftcontent p {
 		text-align: center;
 		width: 92%;
 		color: var(--MediumGray);
 	}
-	.leftcontent a{
+	.leftcontent a {
 		text-decoration: none;
 		color: white;
-		background-color: var(--AlmostBlack);
+		background-color: var(
+			--AlmostBlack
+		);
 		padding: 10px;
 		font-weight: 600;
 		border-radius: 12px;
 	}
-	.leftcontent a:hover{
+	.leftcontent a:hover {
 		background-color: #fff;
-		color:var(--AlmostBlack);
-		border:2px solid var(--AlmostBlack);
+		color: var(--AlmostBlack);
+		border: 2px solid var(--AlmostBlack);
 		transition: all 2s;
 	}
-	.supliers{
+	.supliers {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -215,11 +224,11 @@ header nav a {
 		height: fit-content;
 		padding-top: 10px;
 	}
-	.supliers img{
+	.supliers img {
 		width: 23%;
 		height: fit-content;
 	}
-	.rightcontent{
+	.rightcontent {
 		background-image: url(/images/image-hero-mobile.png);
 		background-size: contain;
 		background-position: center;
@@ -228,44 +237,49 @@ header nav a {
 		height: 50vh;
 	}
 }
-@media only screen and (min-width:320px){
-	.container{
+@media only screen and (min-width: 320px) {
+	.container {
 		height: fit-content;
 	}
-	header{
+	header {
 		background-color: #fff;
 		position: sticky;
 		top: 0;
 		padding-top: 10px;
 	}
-	.hleft{
+	.hleft {
 		display: flex;
 		justify-content: space-between;
 		width: 100%;
 		align-items: center;
 		padding: 10px;
-	 }
-	.hlefta{
+	}
+	.hlefta {
 		display: none;
 	}
-	.logo{
+	.logo {
 		margin-left: 15px;
 	}
-	.menu{
+	.menu {
 		margin-right: 7px;
 	}
-	.hright{
+	.hright {
 		display: none;
 	}
-	.that{
+	.that {
 		width: 100%;
 		height: 150vh;
-		background-color: rgba(0, 0, 0, 0.541);
-		position:absolute;
+		background-color: rgba(
+			0,
+			0,
+			0,
+			0.541
+		);
+		position: absolute;
 		animation: show 1s ease-in-out 1;
 		display: none;
 	}
-	.mobile-menu{
+	.mobile-menu {
 		position: fixed;
 		right: 0;
 		top: 0;
@@ -280,90 +294,92 @@ header nav a {
 		display: none;
 	}
 	@keyframes show {
-		from{
+		from {
 			opacity: 0;
 		}
-		50%{
+		50% {
 			opacity: 0.8;
 		}
-		to{
+		to {
 			opacity: 1;
 		}
 	}
-	.mobile-menu a{
+	.mobile-menu a {
 		text-decoration: none;
 		color: var(--MediumGray);
 		font-size: 18px;
 	}
-	.mobile-menu .crossdiv{
+	.mobile-menu .crossdiv {
 		display: flex;
 		justify-content: end;
 	}
-	.mobile-menu .options .Features, .Company{
+	.mobile-menu .options .Features,
+	.Company {
 		display: flex;
 		gap: 10px;
 		align-items: center;
 	}
-	.mobile-menu .options{
+	.mobile-menu .options {
 		display: flex;
 		flex-direction: column;
 		gap: 15px;
 		padding-left: 20px;
 	}
-	.mobile-menu .options .login,.register{
-		text-align: center;	
+	.mobile-menu .options .login,
+	.register {
+		text-align: center;
 	}
-	.mobile-menu .options .register{
+	.mobile-menu .options .register {
 		border: 2px solid var(--MediumGray);
 		border-radius: 10px;
 		padding: 8px;
 	}
-	.mobile-menu .cross{
-		width: 	11%;
+	.mobile-menu .cross {
+		width: 11%;
 		height: fit-content;
 	}
-	.todolist2{
+	.todolist2 {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		gap: 10px;
 		display: none;
 	}
-	.calendar2{
+	.calendar2 {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		gap: 10px;
 		display: none;
 	}
-	.reminders2{
+	.reminders2 {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		gap: 10px;
 		display: none;
 	}
-	.planning2{
+	.planning2 {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		gap: 10px;
 		display: none;
 	}
-	.companyelements{
+	.companyelements {
 		display: flex;
 		align-items: start;
 		flex-direction: column;
 		padding-left: 25px;
-		gap:12px;
+		gap: 12px;
 		display: none;
 	}
-	section{
+	section {
 		display: flex;
 		flex-direction: column-reverse;
 		height: fit-content;
 	}
-	.leftcontent{
+	.leftcontent {
 		width: 100%;
 		display: flex;
 		flex-direction: column;
@@ -371,29 +387,31 @@ header nav a {
 		align-items: center;
 		gap: 13px;
 	}
-	.leftcontent h1{
+	.leftcontent h1 {
 		font-size: 30px;
 	}
-	.leftcontent p{
+	.leftcontent p {
 		text-align: center;
 		width: 92%;
 		color: var(--MediumGray);
 	}
-	.leftcontent a{
+	.leftcontent a {
 		text-decoration: none;
 		color: white;
-		background-color: var(--AlmostBlack);
+		background-color: var(
+			--AlmostBlack
+		);
 		padding: 10px;
 		font-weight: 600;
 		border-radius: 12px;
 	}
-	.leftcontent a:hover{
+	.leftcontent a:hover {
 		background-color: #fff;
-		color:var(--AlmostBlack);
-		border:2px solid var(--AlmostBlack);
+		color: var(--AlmostBlack);
+		border: 2px solid var(--AlmostBlack);
 		transition: all 2s;
 	}
-	.supliers{
+	.supliers {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -402,11 +420,11 @@ header nav a {
 		height: fit-content;
 		padding-top: 10px;
 	}
-	.supliers img{
+	.supliers img {
 		width: 23%;
 		height: fit-content;
 	}
-	.rightcontent{
+	.rightcontent {
 		background-image: url(/images/image-hero-mobile.png);
 		background-size: contain;
 		background-position: center;
@@ -415,242 +433,249 @@ header nav a {
 		height: 50vh;
 	}
 }
-@media only screen and (min-width:375px){
-	.leftcontent p{
+@media only screen and (min-width: 375px) {
+	.leftcontent p {
 		width: 90%;
 		font-size: 18px;
 	}
 }
-@media only screen and (min-width:375px) and (min-height:780px){
-	.leftcontent h1{
+@media only screen and (min-width: 375px) and (min-height: 780px) {
+	.leftcontent h1 {
 		font-size: 38px;
 	}
-	.leftcontent p{
+	.leftcontent p {
 		padding-bottom: 20px;
 	}
-	.leftcontent a{
+	.leftcontent a {
 		padding: 15px;
 	}
-	.supliers{
+	.supliers {
 		padding-top: 30px;
 	}
 }
-@media only screen and (min-width:400px){
-	.leftcontent h1{
+@media only screen and (min-width: 400px) {
+	.leftcontent h1 {
 		padding-top: 20px;
 	}
 }
-@media only screen and (min-width:640px){
-	.leftcontent h1{
+@media only screen and (min-width: 640px) {
+	.leftcontent h1 {
 		font-size: 40px;
 	}
-	.leftcontent p{
+	.leftcontent p {
 		font-size: 20px;
 		width: 50%;
 	}
-	.supliers{
+	.supliers {
 		gap: 20px;
 	}
-	.supliers img{
+	.supliers img {
 		width: 15%;
 	}
 }
-@media only screen and (min-width:768px) and (min-height:1024px){
- .leftcontent h1{
-	font-size: 50px;
- }
- .leftcontent p{
-	font-size: 30px;
-	width: 75%;
- }
- .leftcontent a{
-	font-size: 20px;
- }
- .supliers img{
-	width: 25%;
- }
+@media only screen and (min-width: 768px) and (min-height: 1024px) {
+	.leftcontent h1 {
+		font-size: 50px;
+	}
+	.leftcontent p {
+		font-size: 30px;
+		width: 75%;
+	}
+	.leftcontent a {
+		font-size: 20px;
+	}
+	.supliers img {
+		width: 25%;
+	}
 }
-@media only screen and (min-width:992px){
-.container{
-	height: 100vh;
+@media only screen and (min-width: 992px) {
+	.container {
+		height: 100vh;
+	}
+	header {
+		width: 95%;
+	}
+	.hleft {
+		display: flex;
+		gap: 40px;
+		width: fit-content;
+	}
+	.hlefta div {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 5px;
+	}
+	.hlefta {
+		display: flex;
+		gap: 25px;
+	}
+	.menu {
+		display: none;
+	}
+	.hright {
+		display: block;
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		margin-right: 40px;
+	}
+	.register {
+		border: 2px solid var(--MediumGray);
+		border-radius: 10px;
+		padding: 8px;
+	}
+	.register:hover {
+		background-color: var(
+			--AlmostBlack
+		);
+		color: #fff;
+		border: none;
+		transition: all 2s;
+	}
+	.hlefta .optionsdesktop {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		top: 89%;
+		left: 10%;
+		background-color: #fff;
+		padding: 12px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		box-shadow: 1px 3px 5px 3px
+			gainsboro;
+		border-radius: 3px;
+		display: none;
+	}
+	.hlefta .companyelementsdesktop {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		top: 89%;
+		left: 26%;
+		background-color: #fff;
+		padding: 12px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		box-shadow: 1px 3px 5px 3px
+			gainsboro;
+		border-radius: 3px;
+		display: none;
+	}
+	.optionsdesktop a {
+		font-size: 16px;
+	}
+	.optionsdesktop .todolist,
+	.optionsdesktop .calendar,
+	.optionsdesktop .reminders,
+	.optionsdesktop .planning {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		padding: 5px;
+	}
+	.optionsdesktop .reminders {
+		gap: 7px;
+	}
+	.mobile-menu {
+		display: none;
+	}
+	section {
+		width: 85%;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		height: 100vh;
+		flex-direction: row;
+		height: fit-content;
+	}
+	.leftcontent {
+		text-align: left;
+		justify-content: start;
+		align-items: start;
+		gap: 40px;
+	}
+	.leftcontent h1 {
+		font-size: 50px;
+		width: 60%;
+	}
+	.leftcontent p {
+		text-align: left;
+		width: 90%;
+	}
+	.leftcontent a {
+		border-radius: 5px;
+	}
+	.supliers {
+		justify-content: start;
+	}
+	.rightcontent {
+		background-image: url(/images/image-hero-desktop.png);
+		background-size: contain;
+		width: 70%;
+		height: 80vh;
+	}
 }
-header{
-	width: 95%;
-}
-.hleft {
-	display: flex;
-	gap: 40px;
-	width: fit-content;
-}
-.hlefta div{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 5px;
-}
-.hlefta{
-	display: flex;
-	gap: 25px;
-}
-.menu{
-	display: none;
-}
-.hright {
-	display: block;
-	display: flex;
-	align-items: center;
-	gap: 20px;
-	margin-right: 40px;
-}
-.register {
-	border: 2px solid var(--MediumGray);
-	border-radius: 10px;
-	padding: 8px;
-}
-.register:hover{
-	background-color: var(--AlmostBlack);
-	color: #fff;
-	border:none;
-	transition: all 2s;
-}
-.hlefta .optionsdesktop{
-	position: absolute;
-	display: flex;
-	flex-direction: column;
-	top: 89%;
-	left: 10%;
-	background-color: #fff;
-	padding: 12px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	box-shadow: 1px 3px 5px 3px gainsboro;
-	border-radius: 3px;
-	display: none;
-}
-.hlefta .companyelementsdesktop{
-	position: absolute;
-	display: flex;
-	flex-direction: column;
-	top: 89%;
-	left: 26%;
-	background-color: #fff;
-	padding: 12px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	box-shadow: 1px 3px 5px 3px gainsboro;
-	border-radius: 3px;
-	display: none;
-}
-.optionsdesktop a{
-	font-size: 16px;
-}
-.optionsdesktop .todolist,.optionsdesktop .calendar,.optionsdesktop .reminders,.optionsdesktop .planning{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 10px;
-	padding: 5px;
-}
-.optionsdesktop .reminders{
-	gap: 7px;
-}
-.mobile-menu{
-	display: none;
-}
-section{
-	width: 85%;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	height: 100vh;
-	flex-direction: row;
-	height: fit-content;
-}
-.leftcontent{
-	text-align: left;
-	justify-content: start;
-	align-items: start;
-	gap: 40px;
-}
-.leftcontent h1{
-	font-size: 50px;
-	width: 60%;
-}
-.leftcontent p{
-	text-align: left;
-	width: 90%;
-}
-.leftcontent a{
-	border-radius: 5px;
-}
-.supliers{
-	justify-content: start;
-}
-.rightcontent{
-	background-image: url(/images/image-hero-desktop.png);
-	background-size: contain;
-	width: 70%;
-	height: 80vh;
-}
-}
-@media only screen and (min-width:1024px){
-	.leftcontent h1{
+@media only screen and (min-width: 1024px) {
+	.leftcontent h1 {
 		width: 59%;
 	}
 }
-@media only screen and (min-width:1272px){
-	section{
+@media only screen and (min-width: 1272px) {
+	section {
 		width: 80%;
 	}
-	.leftcontent h1{
+	.leftcontent h1 {
 		width: 50%;
 	}
-	.leftcontent p{
+	.leftcontent p {
 		width: 70%;
 		font-size: 20px;
 	}
-	.hlefta .optionsdesktop{
+	.hlefta .optionsdesktop {
 		top: 89%;
 		left: 8%;
 	}
-	.hlefta .companyelementsdesktop{
+	.hlefta .companyelementsdesktop {
 		top: 89%;
 		left: 20%;
 	}
 }
-@media only screen and (min-width:1440px){
-	header{
+@media only screen and (min-width: 1440px) {
+	header {
 		width: 85%;
 	}
-	section{
+	section {
 		width: 70%;
 	}
-	.leftcontent h1{
+	.leftcontent h1 {
 		width: 51%;
 	}
 }
-@media only screen and (min-width:1440px) and (min-height:900px){
-	header{
+@media only screen and (min-width: 1440px) and (min-height: 900px) {
+	header {
 		width: 85%;
 	}
-	section{
+	section {
 		width: 70%;
 	}
-	.leftcontent h1{
+	.leftcontent h1 {
 		width: 51%;
 	}
 }
-@media only screen and (min-width:2000px){
-	header{
+@media only screen and (min-width: 2000px) {
+	header {
 		width: 75%;
 	}
-	section{
+	section {
 		width: 60%;
 	}
-	.leftcontent h1{
+	.leftcontent h1 {
 		width: 43%;
 	}
-	.leftcontent p{
+	.leftcontent p {
 		font-size: 22px;
 	}
 }
