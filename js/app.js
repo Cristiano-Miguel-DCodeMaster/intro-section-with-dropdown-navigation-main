@@ -12,12 +12,12 @@ cross.addEventListener('click', () => {
         shadow.style.display = "none";
         openedmenu.style.display = "none";
 })
-var count1 = 0;
-const arrowDown = document.querySelector('.arrow-down');
-arrowDown.addEventListener('click', () => {
-    count1++;
-    if (!(count1%2)==0) {
-        arrowDown.src = "images/icon-arrow-up.svg";
+var count3 = 0;
+const arrowDown3 = document.querySelector('.arrow-down3');
+arrowDown3.addEventListener('click', () => {
+    count3++;
+    if (!(count3%2)==0) {
+        arrowDown3.src = "images/icon-arrow-up.svg";
        
         const todolist2 = document.querySelector('.todolist2');
         const calendar2 = document.querySelector('.calendar2');
@@ -44,7 +44,7 @@ arrowDown.addEventListener('click', () => {
         const calendar2 = document.querySelector('.calendar2');
         const reminders2 = document.querySelector('.reminders2');
         const planning2 = document.querySelector('.planning2');
-        arrowDown.src = "images/icon-arrow-down.svg";
+        arrowDown3.src = "images/icon-arrow-down.svg";
         todolist2.style.display = "none";
 
         calendar2.style.display = "none";
@@ -54,28 +54,29 @@ arrowDown.addEventListener('click', () => {
         planning2.style.display = "none";
     }
 })
-var count2 = 0;
-const arrowDown2 = document.querySelector('.arrow-down2');
-arrowDown2.addEventListener('click', () => {
-    count2++;
-    if (!(count2 % 2) == 0) {
-        arrowDown2.src = "images/icon-arrow-up.svg";
+var count4 = 0;
+const arrowDown4 = document.querySelector('.arrow-down4');
+arrowDown4.addEventListener('click', () => {
+    count4++;
+    if (!(count4 % 2) == 0) {
+        arrowDown4.src = "images/icon-arrow-up.svg";
         const companyElements = document.querySelector('.companyelements');
     
         companyElements.style.display = "block";
         companyElements.style.display = "flex";
     } else {
-        arrowDown2.src = "images/icon-arrow-down.svg";
+        arrowDown4.src = "images/icon-arrow-down.svg";
         const companyElements = document.querySelector('.companyelements');
     
         companyElements.style.display = "none";
     }
 })
-var count3 = 0;
+var count1 = 0;
 const Featuresoption = document.querySelector('.Featuresoption');
 Featuresoption.addEventListener('click', () => {
-    count3++;
-    if (!(count3 % 2) == 0) {
+    count1++;
+    const arrowDown = document.querySelector('.arrow-down')
+    if (!(count1 % 2) == 0) {
         arrowDown.src = "images/icon-arrow-up.svg";
         const optionsdesktop = document.querySelector('.optionsdesktop');
 
@@ -87,11 +88,12 @@ Featuresoption.addEventListener('click', () => {
         optionsdesktop.style.display = "none";
     }
 })
-var count4 = 0;
+var count2 = 0;
 const Company = document.querySelector('.Company');
 Company.addEventListener('click', () => {
-    count4++;
-    if (!(count4 % 2) == 0) {
+    count2++;
+    const arrowDown2 = document.querySelector('.arrow-down2')
+    if (!(count2 % 2) == 0) {
         arrowDown2.src = "images/icon-arrow-up.svg";
         const companyelementsdesktop = document.querySelector('.companyelementsdesktop');
 
